@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CIVIL TECH</title>
+  <meta name="description"
+    content="CIVIL TECH is a leading manufacturer of premium cover blocks for the construction industry. Explore our innovative solutions and products today!" />
+  <meta name="keywords"
+    content="Cover Blocks, Construction, Manufacturer, Civil Tech, Building Materials, Quality Products, cover blocks surat, cover block, Cover blocks " />
+  <meta name="author" content="Hamipara Enterprise" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="CIVIL TECH - Quality Cover Blocks Manufacturer" />
+  <meta property="og:description"
+    content="CIVIL TECH is a leading manufacturer of premium cover blocks for the construction industry. Explore our innovative solutions and products today!" />
+  <meta property="og:image" content="URL_to_your_image.jpg" />
+  <meta property="og:url" content="https://coverblocks.shop" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CIVIL TECH - Quality Cover Blocks Manufacturer" />
+  <meta name="twitter:description"
+    content="CIVIL TECH is a leading manufacturer of premium cover blocks for the construction industry. Explore our innovative solutions and products today!" />
+  <meta name="twitter:image" content="URL_to_your_image.jpg" />
+  <link href="https://fonts.googleapis.com/css2?family=Monda:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="script.js"></script>
+  <style>
+    /* Hamburger Menu Styles */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: #333;
+      margin: 4px 0;
+      transition: 0.4s;
+    }
+
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: white;
+      width: 100%;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .mobile-nav a {
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 500;
+      position: relative;
+      padding: 15px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .mobile-nav a:last-child {
+      border-bottom: none;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+    }
+
+    .show {
+      display: flex;
+    }
+
+    /* Modal Styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      max-width: 90%;
+      max-height: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal-content img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      color: white;
+      font-size: 35px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .modal .prev,
+    .modal .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(255, 255, 255, 0.8);
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .modal .prev {
+      left: 10px;
+    }
+
+    .modal .next {
+      right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="nav-container">
+    <div class="logo">Civil Tech</div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#foot">Contact Info</a>
+    </div>
+    <div class="hamburger" onclick="toggleMobileNav()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#home" onclick="toggleMobileNav()">Home</a>
+      <a href="#about" onclick="toggleMobileNav()">About</a>
+      <a href="#products" onclick="toggleMobileNav()">Products</a>
+      <a href="#foot" onclick="toggleMobileNav()">Contact Info</a>
+    </div>
+  </nav>
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-content">
+        <h1 class="hero-title">COVER BLOCK</h1>
+        <p class="hero-subtitle">Mfg. by Hamipara Enterprise</p>
+        <p class="hero-subtitle">We create perfect solutions for all types of construction problems.</p>
+        <a href="#products" class="cta-button">Get Started</a>
+      </div>
+  </section>
+  <section id="about" class="section about">
+    <h2 class="section-title" data-aos="zoom-fade">About Us</h2>
+    <p data-aos="fade-up" data-aos-delay="200" style="
+          text-align: center;
+          max-width: 800px;
+          margin: 0 auto 50px;
+          line-height: 1.8;
+        ">
+      We are a leading manufacturer of premium cover blocks, delivering
+      innovative solutions to the construction industry. With our commitment
+      to quality and excellence, we've become the trusted choice for
+      contractors and builders nationwide.The cover blocks are made with a strength grade of M-40.
+    </p>
+    <div class="stats">
+      <div class="stat-card" data-aos="zoom-fade">
+        <div class="stat-number">1000+</div>
+        <div class="stat-label">Orders Completed</div>
+      </div>
+      <div class="stat-card" data-aos="zoom-fade" data-aos-delay="200">
+        <div class="stat-number">100+</div>
+        <div class="stat-label">Regular Coustomer</div>
+      </div>
+      <div class="stat-card" data-aos="zoom-fade" data-aos-delay="400">
+        <div class="stat-number">15+</div>
+        <div class="stat-label">Different Types of CoverBlocks</div>
+      </div>
+    </div>
+  </section>
+  <section id="products" class="section products">
+    <h2 class="section-title" data-aos="zoom-fade">Our Products</h2>
+    <div class="products-grid">
+      <!-- Product Cards -->
+      <!-- Repeat for each product card -->
+      <div class="product-card">
+        <div class="image-scroll">
+          <div class="image-container">
+            <img src="20 multy/img_1.jpeg" alt="Cover Block 20/25/38 mm Multy" class="product-image"
+              onclick="openModal(this.src, ['20 multy/IMG_7969.jpg', '20 multy/IMG_7970.jpg', '20 multy/IMG_7971.jpg', '20 multy/IMG_7972.JPG'])"
+              loading="lazy" />
+            <img src="20 multy/img_2.jpeg" alt="Cover Block 20/25/38 mm Multy" class="product-image"
+              onclick="openModal(this.src, ['20 multy/IMG_7969.jpg', '20 multy/IMG_7970.jpg', '20 multy/IMG_7971.jpg', '20 multy/IMG_7972.JPG'])"
+              loading="lazy" />
+            <img src="20 multy/img_3.jpeg" alt="Cover Block 20/25/38 mm Multy" class="product-image"
+              onclick="openModal(this.src, ['20 multy/IMG_7969.jpg', '20 multy/IMG_7970.jpg', '20 multy/IMG_7971.jpg', '20 multy/IMG_7972.JPG'])"
+              loading="lazy" />
+            <img src="20 multy/img_4.jpeg" alt="Cover Block 20/25/38 mm Multy" class="product-image"
+              onclick="openModal(this.src, ['20 multy/IMG_7969.jpg', '20 multy/IMG_7970.jpg', '20 multy/IMG_7971.jpg', '20 multy/IMG_7972.JPG'])"
+              loading="lazy" />
+          </div>
+          <button class="scroll-btn prev">←</button>
+          <button class="scroll-btn next">→</button>
+          <div class="dots-container"></div>
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">Cover Block 20/25/38 mm Multy</h2>
+          <p class="product-description">Our versatile Cover Block 20/25/38 mm Multy is designed to provide optimal
+            support and spacing for concrete reinforcement. Made from high-quality materials, it ensures durability and
+            reliability in various construction applications.</p>
+        </div>
+      </div>
+      <!-- Product Card 2 -->
+      <div class="product-card">
+        <div class="image-scroll">
+          <div class="image-container">
+            <img src="20 round/img_1.PNG" alt="Cover Block 20mm Round" class="product-image"
+              onclick="openModal(this.src, ['20 round/IMG_7974.JPG', '20 round/IMG_7975.jpg', '20 round/IMG_7976.jpg'])"
+              loading="lazy" />
+            <img src="20 round/img_2.jpeg" alt="Cover Block 20mm Round" class="product-image"
+              onclick="openModal(this.src, ['20 round/IMG_7974.JPG', '20 round/IMG_7975.jpg', '20 round/IMG_7976.jpg'])"
+              loading="lazy" />
+          </div>
+          <button class="scroll-btn prev">←</button>
+          <button class="scroll-btn next">→</button>
+          <div class="dots-container"></div>
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">Cover Block 20mm Round</h2>
+          <p class="product-description">The Cover Block 20mm Round is perfect for maintaining the required spacing
+            between rebar and formwork. Its round shape ensures even distribution of load and prevents concrete from
+            seeping through, providing a smooth finish.</p>
+        </div>
+      </div>
+      <!-- Product Card 3 -->
+      <div class="product-card">
+        <div class="image-scroll">
+          <div class="image-container">
+            <img src="25 round/img_1.jpeg" alt="Cover Block 25mm Round" class="product-image"
+              onclick="openModal(this.src, ['25 round/IMG_7977.JPG', '25 round/IMG_7978.jpg', '25 round/IMG_7979.jpg'])"
+              loading="lazy" />
+            <img src="25 round/img_2.PNG" alt="Cover Block 25mm Round" class="product-image"
+              onclick="openModal(this.src, ['25 round/IMG_7977.JPG', '25 round/IMG_7978.jpg', '25 round/IMG_7979.jpg'])"
+              loading="lazy" />
+            <img src="25 round/img_3.jpeg" alt="Cover Block 25mm Round" class="product-image"
+              onclick="openModal(this.src, ['25 round/IMG_7977.JPG', '25 round/IMG_7978.jpg', '25 round/IMG_7979.jpg'])"
+              loading="lazy" />
+          </div>
+          <button class="scroll-btn prev">←</button>
+          <button class="scroll-btn next">→</button>
+          <div class="dots-container"></div>
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">Cover Block 25mm Round</h2>
+          <p class="product-description">The Cover Block 25mm Round is engineered to provide excellent support for rebar
+            in concrete structures. Its robust design ensures stability and prevents displacement during concrete
+            pouring, making it ideal for various construction projects.</p>
+        </div>
+      </div>
+      <!-- Product Card 4 -->
+      <div class="product-card">
+        <div class="image-scroll">
+          <div class="image-container">
+            <img src="30 round/IMG_7982.jpg" alt="Cover Block 30mm Round" class="product-image"
+              onclick="openModal(this.src, ['30 round/IMG_7980.JPG', '30 round/IMG_7981.JPG', '30 round/IMG_7982.jpg'])"
+              loading="lazy" />
+            <img src="30 round/IMG_7980.JPG" alt="Cover Block 30mm Round" class="product-image"
+              onclick="openModal(this.src, ['30 round/IMG_7980.JPG', '30 round/IMG_7981.JPG', '30 round/IMG_7982.jpg'])"
+              loading="lazy" />
+            <img src="30 round/IMG_7981.JPG" alt="Cover Block 30mm Round" class="product-image"
+              onclick="openModal(this.src, ['30 round/IMG_7980.JPG', '30 round/IMG_7981.JPG', '30 round/IMG_7982.jpg'])"
+              loading="lazy" />
+          </div>
+          <button class="scroll-btn prev">←</button>
+          <button class="scroll-btn next">→</button>
+          <div class="dots-container"></div>
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">Cover Block 30mm Round</h2>
+          <p class="product-description">Our Cover Block 30mm Round is designed to ensure precise spacing and alignment
+            of rebar in concrete structures. Its durable construction and easy installation make it a reliable choice
+            for achieving high-quality concrete finishes.</p>
+        </div>
+      </div>
+      <!-- Product Card 5 -->
+      <div class="product-card">
+        <div class="image-scroll">
+          <div class="image-container">
+            <img src="40 round/img_1.jpeg" alt="Cover Block 40mm Round" class="product-image"
+              onclick="openModal(this.src, ['40 round/IMG_7983.JPG', '40 round/IMG_7984.JPG', '40 round/IMG_7985.jpg'])"
+              loading="lazy" />
+            <img src="40 round/img_2.jpeg" alt="Cover Block 40mm Round" class="product-image"
+              onclick="openModal(this.src, ['40 round/IMG_7983.JPG', '40 round/IMG_7984.JPG', '40 round/IMG_7985.jpg'])"
+              loading="lazy" />
+            <img src="40 round/IMG_7984.JPG" alt="Cover Block 40mm Round" class="product-image"
+              onclick="openModal(this.src, ['40 round/IMG_7983.JPG', '40 round/IMG_7984.JPG', '40 round/IMG_7985.jpg'])"
+              loading="lazy" />
+          </div>
+          <button class="scroll-btn prev">←</button>
+          <button class="scroll-btn next">→</button>
+          <div class="dots-container"></div>
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">Cover Block 40mm Round</h2>
+          <p class="product-description">The Cover Block 40mm Round is ideal for maintaining the correct spacing between
+            rebar and formwork. Its robust design ensures stability and prevents displacement during concrete pouring,
+            making it suitable for various construction projects.</p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="image-scroll">
+          <div class="image-container">
+            <img src="50 round/img_1.jpg" alt="Cover Block 50mm Round" class="product-image"
+              onclick="openModal(this.src, ['40 round/IMG_7983.JPG', '40 round/IMG_7984.JPG', '40 round/IMG_7985.jpg'])"
+              loading="lazy" />
+            <img src="50 round/img_2.jpg" alt="Cover Block 50mm Round" class="product-image"
+              onclick="openModal(this.src, ['40 round/IMG_7983.JPG', '40 round/IMG_7984.JPG', '40 round/IMG_7985.jpg'])"
+              loading="lazy" />
+            <img src="50 round/img_3.jpg" alt="Cover Block 50mm Round" class="product-image"
+              onclick="openModal(this.src, ['40 round/IMG_7983.JPG', '40 round/IMG_7984.JPG', '40 round/IMG_7985.jpg'])"
+              loading="lazy" />
+          </div>
+          <button class="scroll-btn prev">←</button>
+          <button class="scroll-btn next">→</button>
+          <div class="dots-container"></div>
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">Cover Block 50mm Round</h2>
+          <p class="product-description">The Cover Block 50mm Round is ideal for maintaining the correct spacing between
+            rebar and formwork. Its robust design ensures stability and prevents displacement during concrete pouring,
+            making it suitable for various construction projects.</p>
+        </div>
+      </div>
+      <!-- Product Card 6 -->
+      <div class="product-card">
+        <div class="image-scroll">
+          <div class="image-container">
+            <img src="40 square/img_1.jpeg" alt="Cover Block 40/50mm Square" class="product-image"
+              onclick="openModal(this.src, ['40 square/IMG_7986.JPG', '40 square/IMG_7987.JPG', '40 square/IMG_7988.jpg', '40 square/IMG_7989.JPG'])"
+              loading="lazy" />
+            <img src="40 square/img_4.jpeg" alt="Cover Block 40/50mm Square" class="product-image"
+              onclick="openModal(this.src, ['40 square/IMG_7986.JPG', '40 square/IMG_7987.JPG', '40 square/IMG_7988.jpg', '40 square/IMG_7989.JPG'])"
+              loading="lazy" />
+            <img src="40 square/img_5.jpeg" alt="Cover Block 40/50mm Square" class="product-image"
+              onclick="openModal(this.src, ['40 square/IMG_7986.JPG', '40 square/IMG_7987.JPG', '40 square/IMG_7988.jpg', '40 square/IMG_7989.JPG'])"
+              loading="lazy" />
+            <img src="40 square/img_2.jpeg" alt="Cover Block 40/50mm Square" class="product-image"
+              onclick="openModal(this.src, ['40 square/IMG_7986.JPG', '40 square/IMG_7987.JPG', '40 square/IMG_7988.jpg', '40 square/IMG_7989.JPG'])"
+              loading="lazy" />
+            <img src="40 square/img_3.jpeg" alt="Cover Block 40/50mm Square" class="product-image"
+              onclick="openModal(this.src, ['40 square/IMG_7986.JPG', '40 square/IMG_7987.JPG', '40 square/IMG_7988.jpg', '40 square/IMG_7989.JPG'])"
+              loading="lazy" />
+          </div>
+          <button class="scroll-btn prev">←</button>
+          <button class="scroll-btn next">→</button>
+          <div class="dots-container"></div>
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">Cover Block 40/50mm Square</h2>
+          <p class="product-description">Our Cover Block 40/50mm Square is designed to provide optimal support and
+            spacing for concrete reinforcement. Its durable construction ensures stability and prevents displacement
+            during concrete pouring.</p>
+        </div>
+      </div>
+
+      <!-- Product Card 7 -->
+      <div class="product-card">
+        <div class="image-scroll">
+          <div class="image-container">
+            <img src="75 square/img_1.jpeg" alt="Cover Block 75mm Square" class="product-image"
+              onclick="openModal(this.src, ['75 square/IMG_7993.jpg', '75 square/IMG_7994.JPG', '75 square/IMG_7995.JPG'])"
+              loading="lazy" />
+            <img src="75 square/img_2.jpeg" alt="Cover Block 75mm Square" class="product-image"
+              onclick="openModal(this.src, ['75 square/IMG_7993.jpg', '75 square/IMG_7994.JPG', '75 square/IMG_7995.JPG'])"
+              loading="lazy" />
+            <img src="75 square/IMG_7994.JPG" alt="Cover Block 75mm Square" class="product-image"
+              onclick="openModal(this.src, ['75 square/IMG_7993.jpg', '75 square/IMG_7994.JPG', '75 square/IMG_7995.JPG'])"
+              loading="lazy" />
+            <img src="75 square/IMG_7995.JPG" alt="Cover Block 75mm Square" class="product-image"
+              onclick="openModal(this.src, ['75 square/IMG_7993.jpg', '75 square/IMG_7994.JPG', '75 square/IMG_7995.JPG'])"
+              loading="lazy" />
+          </div>
+          <button class="scroll-btn prev">←</button>
+          <button class="scroll-btn next">→</button>
+          <div class="dots-container"></div>
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">Cover Block 75mm Square</h2>
+          <p class="product-description">Our Cover Block 75mm Square is engineered to provide excellent support for
+            rebar in concrete structures. Its robust design ensures stability and prevents displacement during concrete
+            pouring.</p>
+        </div>
+      </div>
+      <!-- Product Card 8 -->
+      <div class="product-card">
+        <div class="image-scroll">
+          <div class="image-container">
+            <img src="25 ring cover/IMG_7996.JPG" alt="Ring Cover 25mm" class="product-image"
+              onclick="openModal(this.src, ['25 ring cover/IMG_7996.JPG', '25 ring cover/IMG_7997.JPG', '25 ring cover/IMG_7998.JPG'])"
+              loading="lazy" />
+            <img src="25 ring cover/IMG_7997.JPG" alt="Ring Cover 25mm" class="product-image"
+              onclick="openModal(this.src, ['25 ring cover/IMG_7996.JPG', '25 ring cover/IMG_7997.JPG', '25 ring cover/IMG_7998.JPG'])"
+              loading="lazy" />
+            <img src="25 ring cover/IMG_7998.JPG" alt="Ring Cover 25mm" class="product-image"
+              onclick="openModal(this.src, ['25 ring cover/IMG_7996.JPG', '25 ring cover/IMG_7997.JPG', '25 ring cover/IMG_7998.JPG'])"
+              loading="lazy" />
+          </div>
+          <button class="scroll-btn prev">←</button>
+          <button class="scroll-btn next">→</button>
+          <div class="dots-container"></div>
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">Ring Cover 25mm</h2>
+          <p class="product-description">Our Ring Cover 25mm is designed to provide optimal support and spacing for
+            concrete reinforcement. Its durable construction ensures stability and prevents displacement during concrete
+            pouring.</p>
+        </div>
+      </div>
+      <!-- Product Card 9 -->
+      <div class="product-card">
+        <div class="image-scroll">
+          <div class="image-container">
+            <img src="40 ring cover/IMG_7999.jpg" alt="Ring Cover 40mm" class="product-image"
+              onclick="openModal(this.src, ['40 ring cover/IMG_7999.jpg', '40 ring cover/IMG_8001.jpg', '40 ring cover/IMG_8002.jpg'])"
+              loading="lazy" />
+            <img src="40 ring cover/IMG_8001.jpg" alt="Ring Cover 40mm" class="product-image"
+              onclick="openModal(this.src, ['40 ring cover/IMG_7999.jpg', '40 ring cover/IMG_8001.jpg', '40 ring cover/IMG_8002.jpg'])"
+              loading="lazy" />
+            <img src="40 ring cover/IMG_8002.jpg" alt="Ring Cover 40mm" class="product-image"
+              onclick="openModal(this.src, ['40 ring cover/IMG_7999.jpg', '40 ring cover/IMG_8001.jpg', '40 ring cover/IMG_8002.jpg'])"
+              loading="lazy" />
+          </div>
+          <button class="scroll-btn prev">←</button>
+          <button class="scroll-btn next">→</button>
+          <div class="dots-container"></div>
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">Ring Cover 40mm</h2>
+          <p class="product-description">Our Ring Cover 40mm is designed to provide optimal support and spacing for
+            concrete reinforcement. Its durable construction ensures stability and prevents displacement during concrete
+            pouring.</p>
+        </div>
+      </div>
+      <!-- Product Card 10 -->
+      <div class="product-card">
+        <div class="image-scroll">
+          <div class="image-container">
+            <img src="50 ring cover/IMG_8003.jpg" alt="Ring Cover 50mm" class="product-image"
+              onclick="openModal(this.src, ['50 ring cover/IMG_8003.jpg', '50 ring cover/IMG_8004.jpg', '50 ring cover/IMG_8005.jpg'])"
+              loading="lazy" />
+            <img src="50 ring cover/IMG_8004.jpg" alt="Ring Cover 50mm" class="product-image"
+              onclick="openModal(this.src, ['50 ring cover/IMG_8003.jpg', '50 ring cover/IMG_8004.jpg', '50 ring cover/IMG_8005.jpg'])"
+              loading="lazy" />
+            <img src="50 ring cover/IMG_8005.jpg" alt="Ring Cover 50mm" class="product-image"
+              onclick="openModal(this.src, ['50 ring cover/IMG_8003.jpg', '50 ring cover/IMG_8004.jpg', '50 ring cover/IMG_8005.jpg'])"
+              loading="lazy" />
+          </div>
+          <button class="scroll-btn prev">←</button>
+          <button class="scroll-btn next">→</button>
+          <div class="dots-container"></div>
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">Ring Cover 50mm</h2>
+          <p class="product-description">Our Ring Cover 50mm is designed to provide optimal support and spacing for
+            concrete reinforcement. Its durable construction ensures stability and prevents displacement during concrete
+            pouring.</p>
+        </div>
+      </div>
+      <!-- Product Card 11 -->
+      <div class="product-card">
+        <div class="image-scroll">
+          <div class="image-container">
+            <img src="75 ring cover/img_1.JPG" alt="Ring Cover 75mm" class="product-image"
+              onclick="openModal(this.src, ['75 ring cover/571.jpeg', '75 ring cover/download.jpeg'])" loading="lazy" />
+            <img src="75 ring cover/img_2.JPG" alt="Ring Cover 75mm" class="product-image"
+              onclick="openModal(this.src, ['75 ring cover/571.jpeg', '75 ring cover/download.jpeg'])" loading="lazy" />
+            <img src="75 ring cover/img_3.JPG" alt="Ring Cover 75mm" class="product-image"
+              onclick="openModal(this.src, ['75 ring cover/571.jpeg', '75 ring cover/download.jpeg'])" loading="lazy" />
+            <img src="75 ring cover/img_4.JPG" alt="Ring Cover 75mm" class="product-image"
+              onclick="openModal(this.src, ['75 ring cover/571.jpeg', '75 ring cover/download.jpeg'])" loading="lazy" />
+          </div>
+          <button class="scroll-btn prev">←</button>
+          <button class="scroll-btn next">→</button>
+          <div class="dots-container"></div>
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">Ring Cover 75mm</h2>
+          <p class="product-description">Our Ring Cover 75mm is designed to provide optimal support and spacing for
+            concrete reinforcement. Its durable construction ensures stability and prevents displacement during concrete
+            pouring.</p>
+        </div>
+      </div>
+      <!-- Repeat for other product cards -->
+    </div>
+  </section>
+  <footer class="footer" id="foot">
+    <div class="footer-content">
+      <!-- Contact Information Section -->
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <div class="contact-info">
+          <div class="contact-item">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 0C7.802 0 4 3.403 4 7.602 4 11.8 7.469 16.812 12 24c4.531-7.188 8-12.2 8-16.398C20 3.403 16.199 0 12 0zm0 11a3 3 0 110-6 3 3 0 010 6z" />
+            </svg>
+            <p>
+              Plot No: 3, Vishwakarma Industrial Estate, Kudsad Road,
+              <br />Kim, Surat, Gujarat.<br />Pincode: 394111
+            </p>
+          </div>
+
+          <div class="contact-item">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M20 15.5c-1.25 0-2.45-.2-3.57-.57a1.02 1.02 0 00-1.02.24l-2.2 2.2a15.045 15.045 0 01-6.59-6.59l2.2-2.21a.96.96 0 00.25-1A11.36 11.36 0 018.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z" />
+            </svg>
+            <div class="phone-numbers">
+              <a href="tel:+919825259383">+91 98252 59383</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Business Hours Section -->
+      <div class="footer-section">
+        <h3>Business Hours</h3>
+        <div class="business-hours">
+          <div class="hours-item">
+            <span class="day">Monday - Friday:</span>
+            <span class="time">9:00 AM - 7:00 PM</span>
+          </div>
+          <div class="hours-item">
+            <span class="day">Saturday:</span>
+            <span class="time">9:00 AM - 6:00 PM</span>
+          </div>
+          <div class="hours-item">
+            <span class="day">Sunday:</span>
+            <span class="time">Closed</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#privacy">Privacy Policy</a></li>
+          <li><a href="#terms">Terms & Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright-bar">
+      <p>&copy; 2024 Hamipara Enterprise. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+
+<!-- Modal for Full Image -->
+<div id="imageModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <button class="prev" onclick="prevImage()">←</button>
+  <img class="modal-content" id="fullImage">
+  <button class="next" onclick="nextImage()">→</button>
+</div>
+
+<script>
+  function toggleMobileNav() {
+    const mobileNav = document.getElementById("mobileNav");
+    mobileNav.classList.toggle("show");
+  }
+
+  let currentImageIndex = 0;
+  let imagesArray = [];
+
+  function openModal(src, images) {
+    const modal = document.getElementById("imageModal");
+    const fullImage = document.getElementById("fullImage");
+    imagesArray = images;
+    currentImageIndex = images.indexOf(src);
+    fullImage.src = src;
+    modal.style.display = "flex";
+  }
+
+  function closeModal() {
+    const modal = document.getElementById("imageModal");
+    modal.style.display = "none";
+  }
+
+  function prevImage() {
+    currentImageIndex = (currentImageIndex - 1 + imagesArray.length) % imagesArray.length;
+    document.getElementById("fullImage").src = imagesArray[currentImageIndex];
+  }
+
+  function nextImage() {
+    currentImageIndex = (currentImageIndex + 1) % imagesArray.length;
+    document.getElementById("fullImage").src = imagesArray[currentImageIndex];
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const productCards = document.querySelectorAll(".product-card");
+    productCards.forEach((card) => {
+      const imageContainer = card.querySelector(".image-container");
+      const images = imageContainer.querySelectorAll("img");
+      const prevBtn = card.querySelector(".prev");
+      const nextBtn = card.querySelector(".next");
+      const dotsContainer = card.querySelector(".dots-container");
+      let currentIndex = 0;
+      let scale = 1;
+      function openModal(src) {
+        document.getElementById("fullImage").src = src;
+        document.getElementById("imageModal").style.display = "block";
+      }
+      function closeModal() {
+        document.getElementById("imageModal").style.display = "none";
+      }
+      function zoom(event) {
+        event.preventDefault();
+        const img = document.getElementById("fullImage");
+        if (event.deltaY < 0) {
+          scale += 0.1; // Zoom in
+        } else {
+          scale = Math.max(1, scale - 0.1); // Zoom out but not below original size
+        }
+        img.style.transform = `scale(${scale})`;
+      }
+      // Create dots
+      images.forEach((_, index) => {
+        const dot = document.createElement("div");
+        dot.classList.add("dot");
+        if (index === 0) dot.classList.add("active");
+        dot.addEventListener("click", () => {
+          currentIndex = index;
+          updatePosition();
+        });
+        dotsContainer.appendChild(dot);
+      });
+      const updatePosition = () => {
+        imageContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+        // Update dots
+        const dots = card.querySelectorAll(".dot");
+        dots.forEach((dot, index) => {
+          dot.classList.toggle("active", index === currentIndex);
+        });
+      };
+      prevBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        updatePosition();
+      });
+      nextBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        updatePosition();
+      });
+      // Pause auto scroll on hover
+      card.addEventListener("mouseenter", () => clearInterval(interval));
+      card.addEventListener("mouseleave", () => {
+        interval = setInterval(() => {
+          currentIndex = (currentIndex + 1) % images.length;
+          updatePosition();
+        }, 5000);
+      });
+    });
+  });
+</script>
+
+</html>
